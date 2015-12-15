@@ -1,0 +1,59 @@
+Remember you can always launch a dedicated server from the menus. 
+
+g_gametype: 
+0=Free For All 
+1=Holocron 
+2=Jedi Master 
+3=Duel 
+5=Team Free For All 
+7=Capture the Flag 
+8=Capture the Ysalimari 
+
+g_weaponDisable: 
+Nothing is disabled if set to zero. Lightsaber only if set to 65531. The number is the total of a bitfield with 16 bits, each bit representing a weapon. 
+
+g_duelWeaponDisable: 
+Same as above, but only when playing Duel. This is separate because we encourage Duel mode to be saber-only. 
+
+g_forcePowerDisable: 
+Nothing is disabled if set to zero. All force powers are disabled if set to 32767. The number is the total of a bitfield with 15 bits, each bit representing a force power. 
+
+g_forceBasedTeams: 
+If set to 1, then the red team must use the dark side, the blue team must use the light side. 
+
+g_maxForceRank: 
+Number from 0 to 7, going from Initiate to Jedi Master. The higher the rank, the more points to spend on powers. 
+
+g_maxHolocronCarry: 
+Defaults to 3, indicates the number of holocrons that a player can carry in Holocron mode. 
+
+g_privateDuel: 
+If set to 1, then the "engage_duel" key is functional in FFA and Holocron games. Sort of an "unadvertised command", you can brandish your lightsaber, target an enemy and press the key. If he receives the message and presses his engage_duel key, then you are isolated from other combatants and must duel to the death. Saber only, no force powers other than jump. This is the only time saberlock is operational in FFA or Holocron. The winner gets his health replenished and bragging rights. 
+
+g_saberLock: 
+If set to 1, allows saber locking while playing Duel or while in a private duel. 
+
+g_friendlySaber: 
+If set to 1, then team members can be hit by sabers that are idle (e.g. if you walk into a friend). It doesn't affect if the saber will hit players while swinging. Whether it does damage or not is determined by g_friendlyFire. 
+
+Many of the rest are Q3 standard. 
+
+Included Maps: 
+duel_bay 
+duel_carbon 
+duel_jedi 
+duel_pit 
+ffa_bespin 
+ffa_deathstar 
+ffa_imperial 
+ffa_ns_hideout 
+ffa_ns_streets 
+ffa_raven 
+ffa_yavin 
+ctf_bespin 
+ctf_imperial 
+ctf_ns_streets 
+ctf_yavin 
+
+g_autoMapCycle:
+If set to 1 the game will auto cycle to the next map from the arenas list.
