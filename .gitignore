@@ -1,8 +1,2 @@
-# Ignore the main dir
-base/
-
-# But not the server config
-!base/server.cfg
-
-# Or our main shared library
-!base/jk2mpgamei386.so
+# Ignore the base dir
+jk2-server/base/
