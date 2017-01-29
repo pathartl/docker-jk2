@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER Pat Hartl
+MAINTAINER Pat Hartl & Stephen Sorriaux
 
 # Add compatibility for x86 binaries
 RUN dpkg --add-architecture i386
@@ -14,6 +14,6 @@ WORKDIR /root
 
 EXPOSE 28060-28081/udp
 
-ENTRYPOINT ["/root/jk2ded"]
+ENTRYPOINT ["/root/jk2mvded"]
 
 CMD ["+set", "vm_game 0", "+exec", "server.cfg", "+set", "net_ip 0.0.0.0"]

@@ -1,6 +1,6 @@
 ### Jedi Knight II: Jedi Outcast Docker Container
 
-This repository is a Docker image configuration aimed at hosting a Jedi Knight II: Jedi Outcast dedicated server as a container. It couldn't be any simpler.
+This repository is a Docker image configuration aimed at hosting a Jedi Knight II: Jedi Outcast dedicated server (jk2mv v1.2.1) as a container. It couldn't be any simpler.
 
 #### Method
 
@@ -24,9 +24,15 @@ If you're running multiple instances on the same box you can remap the ports by 
 
 ```docker run -d -v /path/to/docker-jk2/jk2-server/:/root/ docker-jk2 +set net_port 28060```
 
+#### Version changing
+
+You can specify the version of JK2 used on the server by editing the server.cfg file and changing the line "seta mv_serverversion" to 1.02, 1.03 or 1.04. Be aware that your clients must be on the same version.
+
 #### Customizing
 
 Included in this repository is a server.cfg file in the `base` folder. You can use this to customize server settings. There's tons of resources explaining what each options does, so go wild!
+
+A lot more options are available for JK2MV, just checkout [their documentation.](https://github.com/mvdevs/jk2mv/wiki/Server-hosting)
 
 #### Thanks
 
@@ -34,3 +40,4 @@ Included in this repository is a server.cfg file in the `base` folder. You can u
 * Raven Software
 * LucasArts
 * InAnimaTe for making an awesome [Quake 3 docker container](https://github.com/InAnimaTe/docker-quake3)
+* JK2MV [a dedicated server for JK2](https://jk2mv.org/)
